@@ -1,0 +1,14 @@
+
+
+.messages {
+    flex: 1 0 auto;
+    overflow: auto;
+    height: calc(100vh - 260px);
+}
+.footer {
+    flex: 0 0 auto;
+}
+.no-padding-right-left{
+    padding-right: 0px;
+    padding-left: 0px;
+}

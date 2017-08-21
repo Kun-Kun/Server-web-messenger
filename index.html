@@ -41,7 +41,7 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-3 sidenav">
+        <div class="col-sm-2 sidenav">
             <ul class="nav nav-tabs nav-justified">
                 <li class="active">
                     <a data-toggle="tab" href="#conversations" class="btn btn-lg">
@@ -70,22 +70,31 @@
                             </button>
                          </span>
                     </div>
-                    <div class="media thumbnail">
-                        <div class="media-left">
-                            <img src="/img/vasya.jfif" class="media-object img-circle" style="width:30px">
-                        </div>
-                        <div class="media-body">
-                            <h5>Вася</h5>
-                        </div>
-                    </div>
-                    <div class="media thumbnail">
-                        <div class="media-left">
-                            <img src="/img/olena.jfif" class="media-object img-circle" style="width:30px">
-                        </div>
-                        <div class="media-body">
-                            <h5>Olena</h5>
-                        </div>
-                    </div>
+                    <ul class="media-list">
+                        <a href="" class="list-group-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="/img/vasya.jfif" class="media-object img-circle" style="width:30px">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Вася</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="list-group-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="/img/olena.jfif" class="media-object img-circle" style="width:30px">
+                                </div>
+                                <div class="media-body">
+                                    <h5>Olena</h5>
+                                </div>
+                            </div>
+                        </a>
+
+                    </ul>
+
+
                 </div>
                 <div id="phone-book" class="tab-pane fade">
                     <h3>Menu 1</h3>
@@ -100,7 +109,7 @@
 
         </div>
 
-        <div class="col-sm-9">
+        <div class="col-sm-10">
             <div class="nav">
                 <div class="navbar-header">
                     <span class="navbar-brand" href="#">Вася В.Вулига</span>
@@ -109,40 +118,134 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#menu-toggle" id="menu-toggle" class="btn btn-lg btn-link"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
                 </ul>
-                <div class="col-sm-12">
+                <div class="col-sm-12 no-padding-right-left">
                     <div id="wrapper">
                         <div id="page-content-wrapper">
-                            <div class="container-fluid">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="/img/vasya.jfif" class="media-object img-circle" style="width:60px">
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Вася</h4>
-                                        <p>Lorem ipsum...</p>
-                                    </div>
+                            <div class="container-fluid no-padding-right-left">
+                                <div class="messages">
+                                    <ul class="media-list">
+                                        <li class="list-group-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="/img/vasya.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Вася</h4>
+                                                    <p>Lorem ipsum...</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item"><!-- Right-aligned -->
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Olena</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img src="/img/olena.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="/img/vasya.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Вася</h4>
+                                                    <p>Lorem ipsum...</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item"><!-- Right-aligned -->
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Olena</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img src="/img/olena.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="/img/vasya.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Вася</h4>
+                                                    <p>Lorem ipsum...</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item"><!-- Right-aligned -->
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Olena</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img src="/img/olena.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="/img/vasya.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Вася</h4>
+                                                    <p>Lorem ipsum...</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item"><!-- Right-aligned -->
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Olena</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img src="/img/olena.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="/img/vasya.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Вася</h4>
+                                                    <p>Lorem ipsum...</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item"><!-- Right-aligned -->
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">Olena</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                </div>
+                                                <div class="media-right">
+                                                    <img src="/img/olena.jfif" class="media-object img-circle" style="width:60px">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <hr>
-                                <!-- Right-aligned -->
-                                <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading">Olena</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <div class="media-right">
-                                        <img src="/img/olena.jfif" class="media-object img-circle" style="width:60px">
-                                    </div>
+                                <div class="footer">
+                                    <h4>Leave a Comment:</h4>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <textarea class="form-control" rows="3" required=""></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                    </form>
                                 </div>
-                                <hr>
 
-
-                                <h4>Leave a Comment:</h4>
-                                <form role="form">
-                                    <div class="form-group">
-                                        <textarea class="form-control" rows="3" required=""></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-success">Submit</button>
-                                </form>
                             </div>
                         </div>
                         <div id="sidebar-wrapper">
@@ -176,7 +279,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -191,9 +293,9 @@
         $("#wrapper").toggleClass("toggled");
     });
 </script>
-<footer class="container-fluid">
+<!--<footer class="container-fluid">
     <p>Footer Text</p>
-</footer>
+</footer>-->
 
 </body>
 </html>
